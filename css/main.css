@@ -1,0 +1,308 @@
+@import url(http://fonts.googleapis.com/css?family=Artifika);
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+    outline: none;
+    
+}
+
+body {
+    padding: 0;
+    padding-top: 50px;
+}
+
+p {
+    padding-left: 5px;
+}
+
+h2, h3, h4, h5 {
+    padding-left: 5px;
+}
+
+hr {
+    border: 1px solid #222;
+}
+
+section {
+    margin: 5% auto;
+}
+
+input {
+    
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    background-color: #222;
+    min-height: 100px;
+    margin-top: 5%;
+    width: 100%;
+}
+
+h1 {
+    display: inline-block;
+    float: right;
+    font-family: 'Artifika', serif;
+}
+
+h2 {
+    font-family: 'Artifika', serif;
+    max-width: 500px;
+}
+
+h3 {
+    font-family: 'Artifika', serif;
+}
+
+h4 {
+    font-family: 'Artifika', serif;
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Artifika', serif;
+}
+
+ .homeBody {
+    background-color: #000;
+    color: #f7f7f7;
+    padding: 0;
+    margin: 0;
+}
+.fixedBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index:-1000;
+}
+.navbar {
+    margin-bottom: 0;
+    position: fixed;
+}
+.homeContainer {
+    margin:0;
+    width:100%;
+    min-width: 950px;
+}
+
+.comingSoon {
+    position: absolute;
+    z-index: 999;
+    top:25%;
+    left: 23%;
+    z-index: 1000;
+    width: 200px;
+}
+
+.bbMap {
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    z-index: -999;
+}
+
+#splashTitle {
+    text-align: right;
+    color: white;
+    font-family: 'Artifika', serif;
+    font-size: 3em;
+}
+
+#title {
+    text-align:right;
+    color: white;
+    font-family: 'Artifika', serif;
+    font-size: 4em;
+    display: inline;
+    text-shadow: 1px 1px 1px #222;
+}
+
+@media only (max-width: 767px) {
+    #title {
+        display: block;
+        text-align: center; 
+    }
+}
+
+.brand {
+    font-family: 'Artifika', serif;
+}
+
+a:hover {
+    text-decoration: none;
+    text-shadow: -1px 1px 12px #b40606;
+}
+
+.brandLogo {
+    width: 5%;
+    overflow: visible;
+}
+
+.logo {
+    width:25%;
+    display: inline-block;
+    margin: 5% 0;
+    min-width: 150px;
+    text-align: center;
+}
+
+@media (max-width: 765px) {
+    .logo {
+        margin-left: 25%;
+        width: 30%;
+        
+        border: 1px solid red;
+    }
+}
+
+.hero-unit {
+    background-color: #222;
+    background: url('../img/billionPlaceholder.jpg') no-repeat right center fixed;
+    background-position-x:right;
+    border-radius: 0;
+    padding-left: 2.5%;
+    margin: 0;
+}
+
+.contentImage {
+    position: relative;
+    height: 100%;
+    margin-top: 2.5%;
+    min-height: 30em;
+    background: url('../img/eventsPlacehold.jpg') no-repeat left center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment : fixed;  /* FIXED FOR IE */
+}
+
+    .content p {
+        padding-left: 5px;
+    }
+
+.sponsers {
+
+}
+
+.formatAside {
+    border: 1px solid #222;
+    display: inline-block;
+    padding: 10px;
+    width: 90%;
+    background-color: #222;
+}
+
+    .formatAside ul {
+        background-color: #fff;
+        list-style: none;
+        margin-left: 0;
+        padding: 5px 10px;
+    }
+
+    .formatAside li {
+        margin: 5px 0 5px 0;
+        line-height: 300%;
+    }
+
+    .formatAside h4 {
+        color: #fff;
+    }
+
+.formatContent {
+    float: left;
+}
+
+.eventContain {
+    width: 90%;
+    margin: auto;
+}
+
+.event {
+    color: #fff;
+    text-shadow: 1px 1px 1px #222;
+    min-height: 150px;
+    margin-bottom: 1em;
+    border: 1px solid #222;
+    background-color: #eee;
+    overflow: hidden;
+    background: url('../img/missionPlacehold.jpg') no-repeat center center fixed #eee;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment : fixed;  /* FIXED FOR IE */
+}
+
+    .event img {
+
+    }
+
+.eventDetail {
+
+}
+
+    .eventDetail p {
+
+    }
+
+    .eventMap {
+        
+    }
+
+    .eventDetail ul {
+
+    }
+
+        .eventDetail ul li {
+
+        }
+
+    .eventDetail li strong {
+
+    }
+
+.presenterContact {
+    padding-left: 2%;
+}
+
+    .presenterContact h4 {
+
+    }
+
+.wideInputs {
+    width: 95%;
+}
+
+.input-prepend .add-on {
+    background-color: #222;
+    color: #fff;
+    width: 85px;
+    
+}
+
+.input-prepend input, .input-prepend textarea {
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
+    width: 70%;
+}
+
+.socialsContain {
+    background: url('../img/connectPlaceHold.jpg') no-repeat right fixed #eee;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment : fixed;  /* FIXED FOR IE */
+    height: 300px;
+}
+
+
