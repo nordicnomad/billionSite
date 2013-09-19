@@ -62,6 +62,7 @@ h3 {
 h4 {
     font-family: 'Artifika', serif;
     text-align: center;
+    margin-top: 40px;
 }
 
 h5 {
@@ -123,7 +124,7 @@ h5 {
     text-shadow: 1px 1px 1px #222;
 }
 
-@media only (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     #title {
         display: block;
         text-align: center; 
@@ -134,9 +135,23 @@ h5 {
     font-family: 'Artifika', serif;
 }
 
+a {
+    color: #D02E2B;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
 a:hover {
+    color: #ff0000;
     text-decoration: none;
-    text-shadow: -1px 1px 12px #b40606;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .brandLogo {
@@ -166,7 +181,8 @@ a:hover {
     background: url('../img/billionPlaceholder.jpg') no-repeat right center fixed;
     background-position-x:right;
     border-radius: 0;
-    padding-left: 2.5%;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0;
 }
 
@@ -175,6 +191,7 @@ a:hover {
     height: 100%;
     margin-top: 2.5%;
     min-height: 30em;
+    border: 1px solid #222;
     background: url('../img/eventsPlacehold.jpg') no-repeat left center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -187,10 +204,6 @@ a:hover {
         padding-left: 5px;
     }
 
-.sponsers {
-
-}
-
 .formatAside {
     border: 1px solid #222;
     display: inline-block;
@@ -199,19 +212,32 @@ a:hover {
     background-color: #222;
 }
 
+.formatAside a {
+
+}
+
     .formatAside ul {
-        background-color: #fff;
+        color: #fff;
         list-style: none;
         margin-left: 0;
         padding: 5px 10px;
+        background: url('../img/missionPlacehold.jpg') no-repeat center center fixed #eee;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment : fixed;  /* FIXED FOR IE */
     }
 
     .formatAside li {
         margin: 5px 0 5px 0;
         line-height: 300%;
+        border-bottom: 1px solid #D02E2B;
+        background-color: rgba(0,0,0,0.6);
+        padding-left: 5px;
     }
 
-    .formatAside h4 {
+    .formatAside h3 {
         color: #fff;
     }
 
@@ -232,6 +258,7 @@ a:hover {
     border: 1px solid #222;
     background-color: #eee;
     overflow: hidden;
+    border: 1px solid #222;
     background: url('../img/missionPlacehold.jpg') no-repeat center center fixed #eee;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -239,10 +266,6 @@ a:hover {
     background-size: cover;
     background-attachment : fixed;  /* FIXED FOR IE */
 }
-
-    .event img {
-
-    }
 
 .eventDetail {
 
@@ -253,7 +276,9 @@ a:hover {
     }
 
     .eventMap {
-        
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 40px;
     }
 
     .eventDetail ul {
@@ -295,14 +320,71 @@ a:hover {
     width: 70%;
 }
 
-.socialsContain {
+#socialsContain {
     background: url('../img/connectPlaceHold.jpg') no-repeat right fixed #eee;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-attachment : fixed;  /* FIXED FOR IE */
-    height: 300px;
+    min-height: 375px;
+    padding: 20px;
+    border: 1px solid #222;
 }
 
+.socialSpacing {
+    margin-top: 22%;
+    line-height: 110%;
+    text-align: center;
+}
 
+.centerSocial {
+    font-size: 120px;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.centerSocial:hover {
+    color: #f7f7f7;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.centerSocial:active {
+    color: #D02E2B;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.footerRow {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.sponsorLogo {
+    clear: both;
+    margin: auto;
+    display: block;
+    max-width: 200px;
+}
+
+.footerCopy {
+    margin-top: 20px;
+}
+
+.textCenter {
+    color: #555;
+    text-align: center;
+}
