@@ -18,7 +18,7 @@ p {
 }
 
 h2, h3, h4, h5 {
-    padding-left: 5px;
+    padding-left: 20px;
 }
 
 hr {
@@ -33,6 +33,11 @@ input {
     
 }
 
+iframe {
+    width: 95%;
+    padding: 2%;
+}
+
 textarea {
     resize: none;
 }
@@ -40,7 +45,7 @@ textarea {
 footer {
     background-color: #222;
     min-height: 100px;
-    margin-top: 5%;
+    
     width: 100%;
 }
 
@@ -48,6 +53,7 @@ h1 {
     display: inline-block;
     float: right;
     font-family: 'Artifika', serif;
+    margin-top: 10%;
 }
 
 h2 {
@@ -101,6 +107,10 @@ h5 {
     width: 200px;
 }
 
+.bbLogo {
+    
+}
+
 .bbMap {
     min-height: 100%;
     min-width: 100%;
@@ -131,8 +141,10 @@ h5 {
     }
 }
 
-.brand {
+.navbar-inverse .brand {
     font-family: 'Artifika', serif;
+    color: #fff;
+    padding-left: 5%;
 }
 
 a {
@@ -169,10 +181,15 @@ a:hover {
 
 @media (max-width: 765px) {
     .logo {
-        margin-left: 25%;
+        display: block;
+        margin: auto;
         width: 30%;
-        
-        border: 1px solid red;
+    }
+    h1#title {
+        margin-top: 5%;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -184,6 +201,10 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
     margin: 0;
+}
+
+.content {
+    margin-top: 20px;
 }
 
 .contentImage {
@@ -206,14 +227,20 @@ a:hover {
 
 .formatAside {
     border: 1px solid #222;
-    display: inline-block;
     padding: 10px;
     width: 90%;
     background-color: #222;
+    margin: auto;
+    display: block;
 }
 
-.formatAside a {
-
+@media only screen and (max-width: 767px) {
+    .formatAside {
+        margin-left: 0;
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+    }
 }
 
     .formatAside ul {
@@ -239,15 +266,27 @@ a:hover {
 
     .formatAside h3 {
         color: #fff;
+        text-align: center;
     }
 
 .formatContent {
     float: left;
+    margin-bottom: 20px;
 }
 
 .eventContain {
     width: 90%;
     margin: auto;
+}
+
+.wide {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 992px) {
+    .wide {
+       display: none; 
+    }
 }
 
 .event {
@@ -271,34 +310,55 @@ a:hover {
 
 }
 
-    .eventDetail p {
+.eventBriteBtn {
+    margin-top: 5%;
+    margin-left: 20%;
+}
 
-    }
+.eventMapBtn {
+    margin-top: 5%;
+    margin-left: 15%;
+}
 
-    .eventMap {
-        width: 100%;
-        max-width: 450px;
-        margin-bottom: 40px;
-    }
+.eventDetail h3 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0,0,0,0.6);
+}
 
-    .eventDetail ul {
+.eventDetail h3 a {
+    color: #fff;
+}
 
-    }
+.eventImage {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 10%;
+}
 
-        .eventDetail ul li {
+.eventContent {
+    padding: 20px;
+    background-color: rgba(0,0,0,0.6);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
-        }
-
-    .eventDetail li strong {
-
-    }
+.eventContent h4 {
+    margin-top: 0;
+}
 
 .presenterContact {
-    padding-left: 2%;
+    padding-left: 5%;
 }
 
     .presenterContact h4 {
-
+        margin-top: 20px;
     }
 
 .wideInputs {
@@ -329,19 +389,48 @@ a:hover {
     background-attachment : fixed;  /* FIXED FOR IE */
     min-height: 375px;
     padding: 20px;
+    padding-top: 0;
     border: 1px solid #222;
 }
 
-.socialSpacing {
-    margin-top: 22%;
+.socialSpacingTW, .socialSpacingFB {
+    margin-top: 15%;
     line-height: 110%;
     text-align: center;
 }
 
-.centerSocial {
+@media only screen and (min-width: 500px) {
+    .socialSpacingTW {
+        margin-top: 5%;
+    }
+    .socialSpacingFB {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .socialSpacingTW, .socialSpacingFB {
+        margin-top: 50%;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .socialSpacingTW, .socialSpacingFB {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .socialSpacingTW, .socialSpacingFB {
+        margin-top: 28%;
+    }
+}
+
+a .centerSocial {
     font-size: 120px;
     width: 100%;
     text-align: center;
+    color: #222;
     -webkit-transition: all 0.7s ease;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
@@ -349,17 +438,17 @@ a:hover {
     transition: all 0.7s ease-in-out;
 }
 
-.centerSocial:hover {
-    color: #f7f7f7;
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease-in-out;
-    -o-transition: all 0.7s ease-in-out;
-    -ms-transition: all 0.7s ease-in-out;
-    transition: all 0.7s ease-in-out;
-}
-
-.centerSocial:active {
+a .centerSocial:hover {
     color: #D02E2B;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+a .centerSocial:active {
+    color: #f7f7f7;
     -webkit-transition: all 0.7s ease;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
@@ -370,7 +459,12 @@ a:hover {
 .footerRow {
     padding-top: 25px;
     padding-bottom: 25px;
+}
 
+.twitterContain {
+    display: block;
+    margin: auto;
+    width: 99%;
 }
 
 .sponsorLogo {
