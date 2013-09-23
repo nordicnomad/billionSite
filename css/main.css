@@ -105,10 +105,42 @@ h5 {
     left: 23%;
     z-index: 1000;
     width: 200px;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.comingSoon:hover {
+    text-shadow: -1px 1px 5px #D02E2B;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .bbLogo {
-    
+    width: 100%;
+    min-height: 200px;
+    background: url('../img/billionBitsLogo.jpg') no-repeat;
+    background-size: 100%;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.bbLogo:hover {
+    background: url('../img/billionBitsLogoHover.jpg') no-repeat;
+    background-size: 100%;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .bbMap {
@@ -123,6 +155,11 @@ h5 {
     color: white;
     font-family: 'Artifika', serif;
     font-size: 3em;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 #title {
