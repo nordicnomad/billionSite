@@ -232,12 +232,28 @@ a:hover {
 
 .hero-unit {
     background-color: #222;
-    background: url('../img/billionPlaceholder.jpg') no-repeat right center fixed;
+    background: url('../img/billionPlaceholder.jpg') no-repeat right center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-position-x:right;
     border-radius: 0;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0;
+}
+
+@media only screen and (min-width: 994px){
+    .hero-unit {
+        background: url('../img/billionPlaceholder.jpg') no-repeat right center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment : fixed;  /* FIXED FOR IE */
+        background-position-x:right;
+    }
 }
 
 .content {
@@ -250,12 +266,22 @@ a:hover {
     margin-top: 2.5%;
     min-height: 30em;
     border: 1px solid #222;
-    background: url('../img/eventsPlacehold.jpg') no-repeat left center fixed;
+    background: url('../img/eventsPlacehold.jpg') no-repeat left center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment : fixed;  /* FIXED FOR IE */
+}
+
+@media only screen and (min-width: 994px){
+    .contentImage {
+        background: url('../img/eventsPlacehold.jpg') no-repeat left center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment : fixed;  /* FIXED FOR IE */
+    }
 }
 
     .content p {
@@ -285,12 +311,22 @@ a:hover {
         list-style: none;
         margin-left: 0;
         padding: 5px 10px;
-        background: url('../img/missionPlacehold.jpg') no-repeat center center fixed #eee;
+        background: url('../img/missionPlacehold.jpg') no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background-attachment : fixed;  /* FIXED FOR IE */
+    }
+
+    @media only screen and (min-width: 994px){
+        .formatAside ul {
+            background: url('../img/missionPlacehold.jpg') no-repeat center center fixed #eee;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment : fixed;  /* FIXED FOR IE */
+        }
     }
 
     .formatAside li {
@@ -335,26 +371,37 @@ a:hover {
     background-color: #eee;
     overflow: hidden;
     border: 1px solid #222;
-    background: url('../img/missionPlacehold.jpg') no-repeat center center fixed #eee;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment : fixed;  /* FIXED FOR IE */
+    background: #eee;
 }
 
-.eventDetail {
+@media only screen and (min-width: 994px){
+    .event {
+        background: url('../img/missionPlacehold.jpg') no-repeat center center fixed #eee;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment : fixed;  /* FIXED FOR IE */
+    }
+}
 
+.buttonContain {
+    display: block;
+    margin: auto;
+    width: 90%;
+    max-width: 
 }
 
 .eventBriteBtn {
-    margin-top: 5%;
-    margin-left: 20%;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .eventMapBtn {
-    margin-top: 5%;
-    margin-left: 15%;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;   
 }
 
 .eventDetail h3 {
@@ -418,16 +465,26 @@ a:hover {
 }
 
 #socialsContain {
-    background: url('../img/connectPlaceHold.jpg') no-repeat right fixed #eee;
+    background: url('../img/connectPlaceHold.jpg') no-repeat right #eee;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment : fixed;  /* FIXED FOR IE */
     min-height: 375px;
     padding: 20px;
     padding-top: 0;
     border: 1px solid #222;
+}
+
+@media only screen and (min-width: 994px){
+    #socialsContain {
+        background: url('../img/connectPlaceHold.jpg') no-repeat right fixed #eee;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment : fixed;  /* FIXED FOR IE */
+    }
 }
 
 .socialSpacingTW, .socialSpacingFB {
