@@ -144,23 +144,29 @@
                     </div>
                 </div>
                 <div class="presenterContact span7">
+                	<form action="mailform.php" method="post">
                     <h4>Interested in presenting? <br />We'd love to talk to you.</h4>
+                    <div class="input-prepend wideInputs" id="bot_test">
+                        <span class="add-on">Human</span>
+                        <input type="text" name="contactHuman"  />
+                    </div>
                     <div class="input-prepend wideInputs">
                         <span class="add-on">Your Name</span>
-                        <input type="text" placeholder=" What do we call you?" />
+                        <input type="text" name="contactName" placeholder=" What do we call you?" />
                     </div>
                     <div class="input-prepend wideInputs">
                         <span class="add-on">Your Email</span>
-                        <input type="text" placeholder=" address@example.com" />
+                        <input type="text" name="contactEmail" placeholder=" address@example.com" />
                     </div>
                     <div class="input-prepend wideInputs">
                         <span class="add-on">Your Idea</span>
-                        <textarea rows="5" placeholder=" What did you have in mind?"></textarea>
+                        <textarea rows="5" name="contacIdea" placeholder=" What did you have in mind?"></textarea>
                     </div>
                     <div class="input-prepend wideInputs">
                         <span class="add-on">Contact Us</span>
                         <input type="submit" class="btn btn-large btn-inverse" text="Submit"></input>
                     </div>
+                    </form>
                 </div>
             </div>
         </section><!-- /connect -->

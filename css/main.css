@@ -171,6 +171,10 @@ h5 {
     text-shadow: 1px 1px 1px #222;
 }
 
+/*#bot_test{
+	display: none;
+}*/
+
 @media only screen and (max-width: 767px) {
     #title {
         display: block;
