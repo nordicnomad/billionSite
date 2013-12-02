@@ -19,6 +19,7 @@ $message = "Name:" .$_POST[contactName]. "\r\n" .
 $from = "info@1billionbits.com";
 $headers = "From:" . $from;
 mail($to,$subject,$message,$headers);
+header('Location: BillionBits.html');
 } 
 
 ?>
