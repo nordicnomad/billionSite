@@ -171,10 +171,6 @@ h5 {
     text-shadow: 1px 1px 1px #222;
 }
 
-/*#bot_test{
-	display: none;
-}*/
-
 @media only screen and (max-width: 767px) {
     #title {
         display: block;
@@ -389,11 +385,15 @@ a:hover {
     }
 }
 
+#noEventsTitle {
+    margin-top:50px;
+}
+
 .buttonContain {
     display: block;
     margin: auto;
     width: 90%;
-    max-width: 
+    
 }
 
 .eventBriteBtn {
@@ -408,9 +408,9 @@ a:hover {
     padding-bottom: 5px;   
 }
 
-.eventDetail h3 {
+.event h3 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.25em;
     padding-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -469,7 +469,7 @@ a:hover {
 }
 
 #socialsContain {
-    background: url('../img/connectPlaceHold.jpg') no-repeat right #eee;
+    background: url('../img/ConnectPlaceHold.jpg') no-repeat right #eee;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -480,7 +480,7 @@ a:hover {
     border: 1px solid #222;
 }
 
-@media only screen and (min-width: 994px){
+@media only screen and (min-width: 994px) {
     #socialsContain {
         background: url('../img/connectPlaceHold.jpg') no-repeat right fixed #eee;
         -webkit-background-size: cover;
@@ -568,6 +568,7 @@ a .centerSocial:active {
 .sponsorLogo {
     clear: both;
     margin: auto;
+    padding-top: 2%;
     display: block;
     max-width: 200px;
 }
@@ -579,4 +580,23 @@ a .centerSocial:active {
 .textCenter {
     color: #555;
     text-align: center;
+}
+
+.archiveEvent {
+    
+}
+
+.archiveImage {
+
+}
+
+
+div.event .eventArchiveBtn {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;   
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
 }
