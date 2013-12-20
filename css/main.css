@@ -33,10 +33,6 @@ input {
     
 }
 
-#bot_test{
-    display: none;
-}
-
 iframe {
     width: 95%;
     padding: 2%;
