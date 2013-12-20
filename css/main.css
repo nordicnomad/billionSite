@@ -486,7 +486,7 @@ a:hover {
 
 @media only screen and (min-width: 994px) {
     #socialsContain {
-        background: url('../img/connectPlaceHold.jpg') no-repeat right fixed #eee;
+        background: url('../img/ConnectPlaceHold.jpg') no-repeat right fixed #eee;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
