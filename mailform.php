@@ -9,7 +9,7 @@ else {
   
 
 
-$to = "tam@galleonlabs.com";
+$to = "tam@galleonlabs.com" . ',itabakh@gmail.com';
 $subject = "1BillionBits Idea Form: " . $_POST[contactName];
 $message = "Name:" .$_POST[contactName]. "\r\n" . 
 			 	"Email:".$_POST[contactEmail] . "\r\n" . 
